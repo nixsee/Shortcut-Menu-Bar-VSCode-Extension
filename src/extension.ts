@@ -30,10 +30,7 @@ export function activate(context: ExtensionContext) {
 
     ["extension.save", "workbench.action.files.save"],
     ["extension.toggleTerminal", "workbench.action.terminal.toggleTerminal"],
-    [
-      "extension.toggleActivityBar",
-      "workbench.action.toggleActivityBarVisibility",
-    ],
+    ["extension.toggleActivityBar", "workbench.action.toggleActivityBarVisibility"],
     ["extension.back", "workbench.action.navigateBack"],
     ["extension.forward", "workbench.action.navigateForward"],
     ["extension.toggleWhitespace", "editor.action.toggleRenderWhitespace"],
@@ -43,6 +40,15 @@ export function activate(context: ExtensionContext) {
     ["extension.redo", "redo"],
     ["extension.commentLine", "editor.action.commentLine"],
     ["extension.saveAll", "workbench.action.files.saveAll"],
+    ["extension.newNote", "vscodeMarkdownNotes.newNote"],
+    ["extension.dailyNote", "foam-vscode.open-daily-note"],
+    ["extension.addFavorite", "favorites.addToFavorites"],
+    ["extension.toggleZenMode", "workbench.action.toggleZenMode"],
+    ["extension.expandURL", "markdown-link-expander.expand"],
+    ["extension.focusBacklinks", "vscodeMarkdownNotesBacklinks.focus"],
+    ["extension.openGraph", "markdown-links.showGraph"],
+    ["extension.updateReferences", "foam-vscode.update-wikilinks"],
+    ["extension.janitor", "foam-vscode.janitor"],
   ];
 
   let disposableCommandsArray: Disposable[] = [];
